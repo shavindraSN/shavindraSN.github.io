@@ -19,6 +19,7 @@
 
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../dist/css/docs.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
     <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
@@ -37,191 +38,217 @@
 
 <body>
 
-<div id="wrapper">
+    <div id="wrapper">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Examen API Guide</a>
-        </div>
+                <a class="navbar-brand" href="index.html">Examen API Guide</a>
+            </div>
 
-        <ul class="nav navbar-top-links navbar-right">
-            <!-- /.dropdown -->
-            <li class="dropdown">
-                <a href="http://github.com/shavindraSN/examen" class="dropdown-toggle"> View on
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a href="http://github.com/shavindraSN/examen" class="dropdown-toggle"> View on
                     GitHub
                     <span class="fa fa-github fa-fw" aria-hidden="true"></span>
                 </a>
-            </li>
-        </ul>
-        <!-- /.navbar-top-links -->
+                </li>
+            </ul>
+            <!-- /.navbar-top-links -->
 
-        <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
-                <ul class="nav" id="side-menu">
-                    <li>
-                        <a href="index.html"><i class="fa fa-edit fa-fw"></i> Overview</a>
-                    </li>
+            <!--Side Nav bar-->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-edit fa-fw"></i> Overview</a>
+                        </li>
 
-                    <li>
-                        <a href="getting-started.html"><i class="fa fa-list-ul fa-fw"></i> Getting Started</a>
-                    </li>
+                        <li>
+                            <a href="getting-started.html"><i class="fa fa-list-ul fa-fw"></i> Getting Started</a>
+                        </li>
 
-                    <li>
-                        <a><i class="glyphicon glyphicon-triangle-bottom"></i> <b>API References</b> </a>
-                    </li>
-
-
-                    <!-- Side nav user section -->
-                    <li>
-                        <a href="#"><i class="fa fa-bar-user-o fa-fw"></i> Authorization <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="auth/generate">Generate Token</a>
-                            </li>
-                            <li>
-                                <a href="user/get-user">Token information</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <!-- end: Side nav user section -->
-
-                    <!-- Side nav user section -->
-                    <li>
-                        <a href="#"><i class="fa fa-bar-user-o fa-fw"></i> User<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="user/get-all-users.html">Get all users</a>
-                            </li>
-                            <li>
-                                <a href="user/get-user">Get user</a>
-                            </li>
-                            <li>
-                                <a href="user/put-user.html">Update user details</a>
-                            </li>
-
-                            <li>
-                                <a href="user/remove-user.html">remove user</a>
-                            </li>
-
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <!-- end: Side nav user section -->
+                        <li>
+                            <a><i class="glyphicon glyphicon-triangle-bottom"></i> <b>API References</b> </a>
+                        </li>
 
 
-                    <!-- Side nav user section -->
-                    <li>
-                        <a href="#"><i class="fa fa-bar-user-o fa-fw"></i> Paper<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="user/get-all-users.html">Get Papers</a>
-                            </li>
-                            <li>
-                                <a href="user/get-user">Add Papers</a>
-                            </li>
-                            <li>
-                                <a href="user/put-user.html">Update paper details</a>
-                            </li>
+                        <!-- Side nav user section -->
+                        <li>
+                            <a href="#"><i class="fa fa-bar-user-o fa-fw"></i> Authorization <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="auth/generate">Generate Token</a>
+                                </li>
+                                <li>
+                                    <a href="user/get-user">Token information</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <!-- end: Side nav user section -->
 
-                            <li>
-                                <a href="user/remove-user.html">remove paper</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <!-- end: Side nav user section -->
+                        <!-- Side nav user section -->
+                        <li>
+                            <a href="#"><i class="fa fa-bar-user-o fa-fw"></i> User<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="user/get-all-users.html">Get all users</a>
+                                </li>
+                                <li>
+                                    <a href="user/get-user">Get user</a>
+                                </li>
+                                <li>
+                                    <a href="user/put-user.html">Update user details</a>
+                                </li>
 
-                    <!-- Side nav user section -->
-                    <li>
-                        <a href="#"><i class="fa fa-bar-user-o fa-fw"></i> Question<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="user/get-all-users.html">Get Questions</a>
-                            </li>
-                            <li>
-                                <a href="user/get-user">Add Questions</a>
-                            </li>
-                            <li>
-                                <a href="user/put-user.html">Update questions</a>
-                            </li>
+                                <li>
+                                    <a href="user/remove-user.html">remove user</a>
+                                </li>
 
-                            <li>
-                                <a href="user/remove-user.html">remove questions</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                    <!-- end: Side nav user section -->
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <!-- end: Side nav user section -->
 
-                    <li>
-                        <a href="https://nodejs.org/api/https.html"><i class="fa fa-share-square-o fa-fw"></i> More on
+
+                        <!-- Side nav user section -->
+                        <li>
+                            <a href="#"><i class="fa fa-bar-user-o fa-fw"></i> Paper<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="user/get-all-users.html">Get Papers</a>
+                                </li>
+                                <li>
+                                    <a href="user/get-user">Add Papers</a>
+                                </li>
+                                <li>
+                                    <a href="user/put-user.html">Update paper details</a>
+                                </li>
+
+                                <li>
+                                    <a href="user/remove-user.html">remove paper</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <!-- end: Side nav user section -->
+
+                        <!-- Side nav user section -->
+                        <li>
+                            <a href="#"><i class="fa fa-bar-user-o fa-fw"></i> Question<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="question/get-all-questions.html">Get Questions</a>
+                                </li>
+                                <li>
+                                    <a href="question/add-questions.html">Add Questions</a>
+                                </li>
+                                <li>
+                                    <a href="user/put-user.html">Update questions</a>
+                                </li>
+
+                                <li>
+                                    <a href="user/remove-user.html">remove questions</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <!-- end: Side nav user section -->
+
+                        <li>
+                            <a href="https://nodejs.org/api/https.html"><i class="fa fa-share-square-o fa-fw"></i> More on
                             HTTP Requests</a>
-                    </li>
+                        </li>
 
-                    <li>
-                        <a href="https://nodejs.org/api/https.html"><i class="fa fa-wrench fa-fw"></i> Test API</a>
-                    </li>
+                        <li>
+                            <a href="https://nodejs.org/api/https.html"><i class="fa fa-wrench fa-fw"></i> Test API</a>
+                        </li>
 
-                    <!-- remove content start-->
+                        <!-- remove content start-->
 
-                    <!-- end remove content-->
-                </ul>
-            </div>
-            <!-- /.sidebar-collapse -->
-        </div>
-        <!-- /.navbar-static-side -->
-    </nav>
-
-    <div id="page-wrapper">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Overview</h1>
-            </div>
-            <!-- /.col-lg-12 -->
-
-            <div class="row">
-                <div class="col-lg-8">
-                <!-- /.panel -->
-
-                <!-- /.panel -->
-
-                <!-- /.panel -->
+                        <!-- end remove content-->
+                    </ul>
                 </div>
-                <!-- /.col-lg-8 -->
-
-                <!-- /.col-lg-4 -->
+                <!-- /.sidebar-collapse -->
             </div>
-            <!-- /.row -->
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Overview</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- /.panel -->
+
+                        <div class="bs-callout bs-callout-info">
+                            <h4>Examen API Reference</h4>
+                            <p>Welcome to Examen's API Documentation! Examen is powerful, user-friendly online Multiple Choice Questions
+                                (M.C.Q) based quiz system focus to help G.C.E Advanced level students in Sri Lanka.
+                            </p>
+                        </div>
+
+                        <p>Examen is built in a way that anyone can extend and improve the system or build completely new set
+                            of functionalities. Examen can be used to build another set of applications that either improve
+                            existing functionalities or completely new functionalities. Our API Documentation describes existing
+                            functionalities and services provided for you. You can create your own application on top of
+                            Examen API. There are thousands of new possibilities that you may imagined. This API provide
+                            basic functionalities and services that you can use as building blocks of your own application.
+                            We outlined some basic functionalities of our API below
+                        </p>
+                        <p>Before diving into Examen's API resources, you might want to refer to following features of the Examen
+                            API
+                        </p>
+                        <ul>
+                            <li>Retrieve questions in the question bank</li>
+                            <li>Add new questions to question bank</li>
+                            <li>Get random questions set for given time and subject</li>
+                            <li>Get all questions</li>
+                            <li>Get all subjects</li>
+                            <li>Managing users</li>
+                            <li>Creating Papers using Excel sheet</li>
+                            <li>Upload question individually</li>
+                        </ul>
+                    </div>
+                    <!-- /.col-lg-8 -->
+
+                    <!-- /.col-lg-4 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /#page-wrapper -->
+
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /#wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+        <!-- jQuery -->
+        <script src="../vendor/jquery/jquery.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../vendor/metisMenu/metisMenu.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+        <!-- Morris Charts JavaScript -->
+        <script src="../vendor/raphael/raphael.min.js"></script>
+        <script src="../vendor/morrisjs/morris.min.js"></script>
+        <script src="../data/morris-data.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="../vendor/raphael/raphael.min.js"></script>
-    <script src="../vendor/morrisjs/morris.min.js"></script>
-    <script src="../data/morris-data.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="../dist/js/sb-admin-2.js"></script>
 
 </body>
 
